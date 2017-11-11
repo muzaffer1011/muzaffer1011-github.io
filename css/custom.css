@@ -1,0 +1,13 @@
+@media all and (max-width: 990px){
+  nav.fixed{ position: fixed !important; }
+}
+
+@media (max-width: 990px){
+
+.module.widget-handle {
+    border-left: none;
+    border-top: none;
+    line-height: 58px;
+    min-height: 55px;
+}
+}
