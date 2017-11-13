@@ -1,0 +1,277 @@
+.htwsection{
+    padding-bottom: 0;
+}
+/*How it works content*/
+.scroll-slider{ padding: 80px 0 0; }
+#scroll-wrapper{
+position: relative;	
+}
+
+.slidewrap {
+	height: 100%;
+}
+.bottomslider {
+	margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width:100%;
+}
+.slide-item {
+	float: right;
+	width: 450px;
+	margin:auto;
+}
+.slide-item h3 {
+	font-size:45px;
+	line-height: 1;
+	padding-right:75px;
+    margin-bottom: 0;
+    font-weight: normal;
+    color:#22b9ec;
+}
+.slide-item p {
+	 color: #666666;
+    font-weight: normal;
+    line-height: 26px;
+    padding-right: 36px;
+	font-size: 18px;
+}
+
+.tabing-block .left-block {
+	display: none;
+}
+.owl-prev, .owl-next {
+	font-size: 0;
+	height: 48px;
+	width: 48px;
+	border-radius: 50%;
+	display: inline-block; vertical-align: top; border: 2px solid #ff0000;
+}
+.owl-prev{ background: url(../images/arrow-prv2.png) no-repeat center center; margin: 0 5px;  }
+.owl-next{ background: url(../images/arrow-nxt2.png) no-repeat center center; margin: 0 5px;  }
+
+
+#owl-example .owl-dots {
+	bottom: 45px;
+	left: 450px;
+	text-align: left;
+	position: absolute;
+	width: 100%;
+}
+#owl-example .owl-dot {
+	display: inline-block;
+	margin-right: 29px;
+}
+#owl-example .owl-dot span {
+	color: #299fd9;
+	font-family: "Lato", sans-serif;
+	font-size: 14px;
+}
+#owl-example .owl-dot:hover span, #owl-example .owl-dot.active span {
+	color: #ff5722;
+}
+#owl-example .owl-dots, .owl-nav {
+	bottom: 132px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: absolute;
+	text-align: left;
+	width: 205px;
+}
+#owl-example .owl-dot {
+	display: inline-block;
+	margin: 0 3px; width:16px; height:16px;
+	opacity: 1; border: 2px solid #9e9e9e; border-radius: 50%;
+}
+#owl-example .owl-dot.active{ border: 2px solid #ff0606; }
+#owl-example .owl-dots {
+	opacity: 1;
+	z-index: 100;
+	position: absolute; left: 0; right: 0; bottom: 180px; margin: 0 auto; width: 100%; text-align: center;
+}
+#owl-example .owl-nav {
+	z-index: 99; display: none;
+}
+.first-slide .bottomslider img{
+    margin-top: 35px;
+}
+.animated {
+	-webkit-animation-duration: 0.1s;
+	animation-duration: 0.1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+.animated.flipOutX, .animated.flipOutY {
+	-webkit-animation-duration: 0.2s;
+	animation-duration: 0.2s;
+}
+.owl-animated-out {
+	z-index: 1
+}
+.owl-animated-in {
+	z-index: 0
+}
+
+#owl-example .owl-stage {
+	position: relative;
+	padding-bottom: 54px;
+}
+#owl-example.fullHeight .owl-item{
+   height: 500px;
+    
+}
+#owl-example.fullHeight .owl-item{
+    margin-top: 0px;
+}
+
+#owl-example .owl-item:not(:last-child) {
+    background:url(../images/slide-arrow.png) no-repeat  95% center;
+}
+
+#owl-example .owl-stage{
+    background: url(../images/cloud.png) repeat-x left bottom;
+}
+.forth-slide .slide-item{
+    margin:auto;
+}
+.owl-carousel .owl-item .bottomslider img{
+    width:-webkit-calc(90% - 450px); width:calc(90% - 450px);
+    display: inline-block;
+}
+
+
+
+/*Test*/
+@media screen (min-width : 1024px){
+#scroll-wrapper{
+    white-space: nowrap;
+    text-align: left;
+}
+    }
+#scroll-wrapper .slidewrap{
+    width: 100vw;
+    display: inline-block;
+    vertical-align: top;
+    height:400px;
+}
+.slidewrap .bottomslider img{
+    width: 350px;
+    height: auto;
+    margin-right: 50px;
+}
+.slide-item {
+    text-align: left;
+    white-space: normal;
+    margin:0 !important;
+}
+.bottomslider{
+        margin: 0 auto;
+    /* display: flex; */
+     align-items: flex-start; 
+    height: 100%;
+    width: 70%;
+    text-align: right;
+}
+#scroll-wrapper .slidewrap:not(:last-child) {
+/*    background:url(../images/slide-arrow.png) no-repeat  right center;*/
+        background: url(../images/slide-arrow.png) no-repeat 95% 50px;
+}
+
+#scroll-wrapper .mCSB_container{
+    background: url(../images/cloud.png) repeat-x left bottom;
+}
+.mCSB_horizontal.mCSB_inside > .mCSB_container{
+    margin-bottom: 0!important;
+}
+.mCSB_scrollTools{
+    opacity: 0 !important;
+}
+#scroll-wrapper {
+    white-space: nowrap;
+}
+
+
+
+/*Responsive*/
+@media only screen and (min-width : 1025px) and (max-width : 1199px) {
+
+.slidewrap{ margin-top: 100px; }
+	
+}
+
+@media only screen and (max-width : 1023px) {
+
+
+
+/*How it works*/
+#owl-example .owl-stage { background: url(../images/scroll-slider-img.png) no-repeat 0 80px/100% auto; }
+.slidewrap{ margin: 0 0 50px; }
+#owl-example .owl-item{  height: auto; }
+    .owl-carousel .owl-item .bottomslider img{
+/*
+        width: -webkit-calc(50% - 100px);
+        width: calc(50% - 100px);
+        margin:auto;
+*/
+        width:50%;
+    }
+    #scroll-wrapper .slidewrap{
+        height:auto !important;
+    }
+#owl-example .owl-nav{ display: block; width: 100%; text-align: center; bottom: 50px; }
+#owl-example .owl-nav > div{ display: inline-block; }
+#owl-example .owl-nav .pagination-wrap{ display: none; margin: 0 5px; line-height: 48px; }
+    .slide-item p{font-size: 16px;}
+    .slide-item h3{font-size: 35px;}
+    .slide-item{width:50%;}
+    #scroll-wrapper .mCSB_container{
+    background:none !important;
+}
+    .bottomslider{
+        width:100% !important;
+        padding:0 15px;
+    }
+}
+
+
+/*
+ 2.) Media Query for mobile
+ ===============================*/
+@media only screen and (max-width : 767px){
+
+h2, .h2{ font-size: 26px; margin-bottom: 15px; padding-bottom: 15px; }
+h3, .h3{ font-size: 26px; margin-bottom: 15px; padding-bottom: 15px; }
+p{ font-size: 16px; line-height: 22px; }
+
+
+/*How it work*/
+.scroll-slider{ padding: 25px 15px; }
+#owl-example .owl-item{ height:auto; padding: 0 15px; }
+#owl-example .owl-item, #scroll-wrapper{ height:auto !important; background:none !important;}
+#owl-example .owl-stage{ background:none; padding-bottom: 20px; }
+.slide-item { width: auto; margin: 0; float: none; }
+.slidewrap{ min-height: 100px; margin-top: 0; }
+#owl-example .owl-dots{ display: none !important; }
+#owl-example .owl-nav{ display: block; position: static; text-align: center; width: 100%; }
+.slide-item h3{ padding: 0; font-size: 30px; text-align: center; }
+.slide-item p{ padding: 0; text-align: center; }
+#owl-example .owl-nav .pagination-wrap{ display:none ; line-height: 48px; padding: 0 5px; }
+.forth-slide .slide-item{ margin: 0; }
+
+    .owl-carousel .owl-item .bottomslider img{
+        display: none;
+    }
+    .scroll-slider {
+        padding: 25px 0px;
+    }
+    #scroll-wrapper .slidewrap{
+        width:100% !important;
+        margin-bottom: 0;
+    }
+}
+
+
+
+
