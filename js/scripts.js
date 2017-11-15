@@ -1022,28 +1022,48 @@ $(window).load(function() {
 
     mr_firstSectionHeight = $('.main-container section:nth-of-type(1)').outerHeight(true);
     
-    
-    
-    
     //Scroll Slider
     //sliderInit();
-		if($(window).width()<1024){
-            owlCarousel = $("#owl-example").owlCarousel({
-                loop : false,
-                singleItem : true,
-                nav : true,
-                pager : true,
-                dots : false
-            });
-        }
-    else{
-        $("#scroll-wrapper").mCustomScrollbar({
-                    axis:"x"
-                });
-    }
+		// owlCarousel = $("#owl-example").owlCarousel({
+		// 	loop : false,
+		// 	singleItem : true,
+		// 	nav : true,
+		// 	pager : true,
+        //     dots : false,
+		// 	afterInit : attachEvent
+		// });
 		function attachEvent(){
 			
-		}
+        }
+        var scrollCount = $('#scroll-wrapper .slidewrap').length;
+        console.log(scrollCount)
+        $('.htwsection-wrapper').height($(window).height()+$('.footer-section').height()+$(window).width()*(scrollCount-1));
+        var scrollAmount=0;
+        var fixedPoint;
+        $(window).scroll(function(){
+            if($(window).width()>1024){
+                if($(window).scrollTop()>=$('.htwsection-wrapper').offset().top && $(window).scrollTop()<=($('.htwsection-wrapper').offset().top+$('.htwsection-wrapper').height()-$(window).height())){
+                    console.log('true')
+                    $('.htwsection').addClass('fixed');
+                     scrollAmount = $(window).scrollTop() - $('.htwsection-wrapper').offset().top;
+                       $('#scroll-wrapper').css({"transform":"translateX(-"+scrollAmount+"px)"})
+                       $('.htwsection').css({"top":"0"});
+                }
+                else if($(window).scrollTop() < $('.htwsection-wrapper').offset().top){
+                    $('.htwsection').removeClass('fixed');
+                    $('.htwsection').css({"top":"0"});
+                }
+                else{
+                    console.log('false');
+                    fixedPoint = $('.htwsection-wrapper').height()-$(window).height();
+                    $('.htwsection').css({"top":fixedPoint+"px"});
+                    console.log(fixedPoint);
+                    $('.htwsection').removeClass('fixed');
+                    //$('.htwsection').css({"top":"auto"});
+                }
+            }
+        })
+
 		var pagin_nu = $('<div class="pagination-wrap"></div>')
 		$("#owl-example .owl-prev").after(pagin_nu);
 		var itms_no = $('#owl-example .owl-item').length;
