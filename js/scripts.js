@@ -1024,20 +1024,23 @@ $(window).load(function() {
     
     //Scroll Slider
     //sliderInit();
-		// owlCarousel = $("#owl-example").owlCarousel({
-		// 	loop : false,
-		// 	singleItem : true,
-		// 	nav : true,
-		// 	pager : true,
-        //     dots : false,
-		// 	afterInit : attachEvent
-		// });
+		owlCarousel = $("#owl-example").owlCarousel({
+			loop : false,
+			singleItem : true,
+			nav : true,
+			pager : true,
+            dots : false,
+			afterInit : attachEvent
+		});
 		function attachEvent(){
 			
         }
         var scrollCount = $('#scroll-wrapper .slidewrap').length;
-        console.log(scrollCount)
-        $('.htwsection-wrapper').height($(window).height()+$('.footer-section').height()+$(window).width()*(scrollCount-1));
+        //console.log(scrollCount)
+        if($(window).width()>1024){
+            $('.htwsection-wrapper').height($(window).height()+$('.footer-section').height()+$(window).width()*(scrollCount-1));
+        $('#scroll-wrapper').width($(window).width()*scrollCount);
+        }
         var scrollAmount=0;
         var fixedPoint;
         $(window).scroll(function(){
