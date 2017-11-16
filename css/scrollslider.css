@@ -13,7 +13,7 @@
     position: relative;
 }
 .htwsection .section-header{
-    padding:50px 0 0;
+    padding:100px 0 0;
 }
 .htwsection #footer-section #scroll-wrapper{
    height:calc(100vh - 192px);
@@ -44,7 +44,8 @@
 .bottomslider {
     height: 100%;
     vertical-align: middle;
-    padding: 50px 0 150px;
+    /* padding: 50px 0 150px; */
+        padding: 8vh 0 24vh;
 }
 #scroll-wrapper{
     background:url(../images/cloud.png) repeat-x left bottom;
@@ -64,7 +65,7 @@
     padding-right: 36px;
     font-size: 18px;
 }
-#scroll-wrapper .slidewrap:not(:last-child) {
+#scroll-wrapper .owl-item:not(:last-child) .slidewrap{
     background: url(../images/slide-arrow.png) no-repeat 95% 30%;
 }
 .slidewrap .bottomslider img {
@@ -72,6 +73,9 @@
     height: auto;
     margin-right: 50px;
     display: inline-block;
+}
+#owl-example .owl-nav{
+    display: none;
 }
 .owl-prev, .owl-next {
 	font-size: 0;
@@ -84,9 +88,13 @@
 .owl-next{ background: url(../images/arrow-nxt2.png) no-repeat center center; margin: 0 5px;  }
 
 @media screen and (max-width : 1024px){
-    #owl-example .owl-nav{ display: block; width: 100%; text-align: center; bottom: 50px;position: absolute; }
+    .htwsection .section-header{
+        padding-top: 50px;  
+    }
+    #owl-example .owl-nav{ display: block; width: 100%; text-align: center; bottom: 75px;position: absolute; }
 #owl-example .owl-nav > div{ display: inline-block; }
 #owl-example .owl-nav .pagination-wrap{ display: none; margin: 0 5px; line-height: 48px; }
+.bottomslider{padding: 8vh 0 10vh;}
 }
 @media screen and (min-width : 768px) and (max-width : 1023px){
     .htwsection #footer-section #scroll-wrapper,.htwsection{
@@ -101,7 +109,7 @@
     .owl-carousel .owl-item .bottomslider img{
         display: none;
     }
-    
+    .htwsection .section-header{padding:50px 15px 0};
     #scroll-wrapper .slidewrap{
         width:100% !important;
         margin-bottom: 0;
