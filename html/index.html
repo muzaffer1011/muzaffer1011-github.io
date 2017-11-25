@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/vendors.bundle.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- <script src="https://use.fontawesome.com/b4835e5e00.js"></script> -->
     <title>Lancelot Contractors | Reputation Summary</title>
 </head>
@@ -31,7 +32,7 @@
                         <span class="hide-close">My Reputation</span>
                     </header>
                     <div class="accordion-wrapper hide-close">
-                        <div class="accord-header">Relationship <i class="fa fa-angle-down"></i></div>
+                        <div class="accord-header">Relationship <i class="fa fa-angle-up fa-angle-down"></i></div>
                         <div class="accord-body">
                             <ul class="p-0 m-0">
                                 <li>
@@ -164,7 +165,7 @@
                             </header>
                             <div class="article-body">
                                 <div class="row">
-                                    <div class="col text-center">
+                                    <div class="three-block col-md-12 col-lg-4 col text-center">
                                         <div class="usercard">
                                             <figure>
                                                 <img src="assets/images/user.jpg" alt="">
@@ -175,8 +176,8 @@
                                             <button class="btn">Update</button>
                                         </div>
                                     </div>
-                                    <div class="col">
-                                    <div class="about-user text-center">
+                                    <div class="three-block col-md-12 col-lg-4 col">
+                                        <div class="about-user text-center">
                                         <h3>Management Consultant (Strategy)</h3>
                                         <ul class="sector">
                                             <li>Energy</li>
@@ -195,7 +196,7 @@
                                         </ul>
                                     </div>
                                     </div>
-                                    <div class="col">
+                                    <div class="three-block col-md-12 col-lg-6 col">
                                         <div class="feedback-block">
                                             <div class="overall-rating-block">
                                                 <span class="block-label">Overall Rating : </span> <span class="score"><span class="obtained">4.8</span>/5.0</span>
@@ -239,7 +240,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col arrow-block-blue">
+                                    <div class="col-xs-12 col-md-12 col-lg-6 arrow-block-blue">
                                         <div class="section-content">
                                             <h2 class="block-question">Why Yes  <i class="fa fa-info-circle"  aria-hidden="true" style="cursor:pointer;"  data-toggle="m-popover" title="Recommendation" data-content="Here you will see feedback around one of the most important question for any contractor."></i>
                                             </h2>
@@ -249,7 +250,7 @@
                                         <canvas id="my_canvas" width="444" height="280"></canvas> 
 
                                     </div>
-                                    <div class="col arrow-block-grey">
+                                    <div class="col-xs-12 col-md-12 col-lg-6 arrow-block-grey">
                                         <div class="section-content">
                                             <h2 class="block-question">Why Not <small>(Private to you)</small>  <i data-placement="left" class="fa fa-info-circle" aria-hidden="true" style="cursor:pointer;" data-toggle="m-popover" title="Attributes" data-content="Here you will see any negative feedback that you may have received. This part of the report is only visible to you."></i>                                                
                                             </h2>
@@ -260,7 +261,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col arrow-block-blue">
+                                    <div class="col-md-12 col-lg-6 arrow-block-blue">
                                          <div class="section-content">
                                             <h2 class="block-question">How Good Are These Attributes  <i class="fa fa-info-circle" aria-hidden="true" style="cursor:pointer;" data-toggle="m-popover" title="Attributes" data-content="Here you will see feedback on outputs and end results of the projects you worked on in the past."></i>                                                
                                             </h2>
@@ -269,7 +270,7 @@
                                         </div>
                                         <div id="good-attribute-chart"></div>
                                     </div>
-                                    <div class="col arrow-block-grey">
+                                    <div class="col-md-12 col-lg-6 arrow-block-grey">
                                         <div class="section-content">
                                             <h2 class="block-question">How bad are these attributes? <small>(Private to you)</small> 
                                                 <i class="fa fa-info-circle" aria-hidden="true" data-placement="left" style="cursor:pointer;" data-toggle="m-popover" title="Why not?" data-content="Here you will see which areas were possibly not as good which you could improve on. This part of the report is only shown to you and not publicly."></i>                                                
@@ -281,7 +282,7 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col arrow-block-blue">
+                                    <div class="col-md-12 col-lg-6 arrow-block-blue">
                                         <div class="section-content">
                                             <h2 class="block-question">
                                                 How Would You Rate Chin Han’s Skills
@@ -292,7 +293,7 @@
                                         </div>
                                         <div id="rate-chart"></div>
                                     </div>
-                                    <div class="col">
+                                    <div class="col-md-12 col-lg-6">
                                             <div class="section-content">
                                                     <h2 class="block-question">
                                                             Would You Recommend Han To Friend
@@ -378,85 +379,6 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/ProgressCircle.js"></script>
     <script src="assets/js/site.js"></script>
-    <script>
-        var myCanvas = document.getElementById('my_canvas');
-        var myCanvas2 = document.getElementById('my_canvas2');
-            var p1=0.70,p2=0.75,p3=0.8;
-            var circle = new ProgressCircle({
-                canvas: myCanvas,
-                minRadius: 45, // Inner radius of the innermost circle
-                arcWidth: 15, // Width of each circle
-                gapWidth: 10, // Space between adjacent circles
-                centerX: 160, // X coordinate of the circle center
-                centerY: 140, // Y coordinate of the circle center
-                infoLineLength: 150, // Length of the info line
-                horizLineLength: 50, // Length of the horizontal info line
-                infoLineBaseAngle: Math.PI / 6, // Start angle of the info line
-                infoLineAngleInterval: Math.PI / 8, // Angle between info lines
-            });
-
-            circle.addEntry({
-                fillColor: 'rgba(194, 227, 239, 1)',
-                outlineColor: 'rgba(194, 227, 239, 1)', // (Optional)
-                progressListener: function() {return p1;},
-                infoListener: function() {return `<h3 style="font-size:30px; color:#00b0f0;">
-                    ${p1*100}% <small style="font-size:14px;">Highest Quality Output</small>
-                    </h3>`;},// (Optional)
-            }).addEntry({
-                fillColor: 'rgba(133, 211, 240, 1)',
-                outlineColor: 'rgba(133, 211, 240, 1)', // (Optional)
-                progressListener: function() {return p2;},
-                infoListener: function() {return `<h3 style="font-size:30px; color:#00b0f0;">
-                    ${p2*100}% <small style="font-size:14px;">Highest Quality Output</small>
-                    </h3>`;},// (Optional)
-            }).addEntry({
-                fillColor: 'rgba(0, 176, 240, 1)',
-                outlineColor: 'rgba(0, 176, 240, 1)', // (Optional)
-                progressListener: function() {return p3;},
-                infoListener: function() {return `<h3 style="font-size:30px; color:#00b0f0;">
-                    ${p3*100}% <small style="font-size:14px;">Highest Quality Output</small>
-                    </h3>`;},// (Optional)
-            });
-            circle.start();
-
-            var c2p1=0.48,c2p2=0.30,c2p3=0.18;
-            var circle2 = new ProgressCircle({
-                canvas: myCanvas2,
-                minRadius: 45, // Inner radius of the innermost circle
-                arcWidth: 15, // Width of each circle
-                gapWidth: 10, // Space between adjacent circles
-                centerX: 160, // X coordinate of the circle center
-                centerY: 140, // Y coordinate of the circle center
-                infoLineLength: 150, // Length of the info line
-                horizLineLength: 50, // Length of the horizontal info line
-                infoLineBaseAngle: Math.PI / 6, // Start angle of the info line
-                infoLineAngleInterval: Math.PI / 8, // Angle between info lines
-            });
-
-            circle2.addEntry({
-                fillColor: 'rgba(189, 188, 188, 1)',
-                outlineColor: 'rgba(189, 188, 188, 1)', // (Optional)
-                progressListener: function() {return c2p1;},
-                infoListener: function() {return `<h3 style="font-size:30px; color:#787878;">
-                    ${c2p1*100}%  <small style="font-size:14px; margin-top:-15px;">Highly Collaborative</small>
-                    </h3>`;},// (Optional)
-            }).addEntry({
-                fillColor: 'rgba(155, 154, 154, 1)',
-                outlineColor: 'rgba(155, 154, 154, 1)', // (Optional)
-                progressListener: function() {return c2p2;},
-                infoListener: function() {return `<h3 style="font-size:30px; color:#787878;">
-                    ${c2p2*100}%  <small style="font-size:14px; margin-top:-15px;">Priority/Time Mngt</small>
-                    </h3>`;},// (Optional)
-            }).addEntry({
-                fillColor: 'rgba(110, 110, 110, 1)',
-                outlineColor: 'rgba(110, 110, 110, 1)', // (Optional)
-                progressListener: function() {return c2p3;},
-                infoListener: function() {return `<h3 style="font-size:30px; color:#787878;">
-                    ${c2p3*100}%  <small style="font-size:14px; margin-top:-50px;">Client Facing</small>
-                    </h3>`;},// (Optional)
-            });
-            circle2.start(600);
-
-    </script>
+    
 </body>
 </html>
