@@ -279,12 +279,12 @@ ul{
 
 /*Main Content*/
 .content{
-    padding: 50px 7px;
+    padding: 50px 0px;
 }
 article header{
     padding:0 8px;
     border-bottom:1px solid #787878;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 article header h2{
     font-size: 18px;
@@ -392,10 +392,13 @@ article header .right-content h3{
 .right-content .switch-btn{
     margin:2px 0 0px 15px;
 }
-
+.intro-box{
+    border: 1px solid rgb(176,176,176);
+    padding: 15px;
+    box-shadow: 0 5px 10px 0px rgba(176,176,176,1);
+    margin-bottom: 30px;
+}
 .usercard{
-    width:242px;
-    display:inline-block;
     padding:30px 12px 23px;
     background:#e6f7fd;
 }
@@ -449,48 +452,50 @@ article header .right-content h3{
     margin-bottom: 6px;
 }
 .about-user {
-    padding-top: 21px;
+    padding-top: 10px;
+    font-weight:700;
 }
 .about-user h3{
-    font-weight:600;
-    color:#5a5b5d;
-    font-size: 16px;
+    font-weight:700;
+    color:#333;
+    font-size: 18px;
     margin-bottom: 8px;
 }
 .about-user .sector{
-    padding-bottom: 7px;
+    padding-bottom: 14px;
     border-bottom: 1px solid #dddedf;
-    margin-bottom: 14px;
+    margin-bottom: 11px;
+    overflow: hidden;
 }
 .about-user .sector li{
-    display: inline-block;
-    vertical-align: top;
+    float: left;
     font-size: 14px;
     color: #848282;
     line-height: 1;
-    margin: 0 9px 0 -10px;
 }
 .about-user .sector li:not(:last-child):after{
     content:"|";
+    margin:0 2px;
 }
-.about-user q.about{
+.about-user .about{
     color:#848282;
     font-size: 14px;
-    text-align: left;
     display: block;
-    margin-bottom: 23px;
+    font-weight:700;
+    margin-bottom: 25px;
 }
 .about-user .achievements li{
     font-size: 14px;
     color: #848282;
     line-height: 1;
     text-align: left;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
-.feedback-block{
-    max-width:235px;
-    margin: 23px auto 0;
+.about-user .achievements li:last-child{
+    margin-bottom: 0;
+    margin-top: 25px;
 }
+
 .overall-rating-block{
     font-size: 20px;
     color:#9a9999;
@@ -506,15 +511,26 @@ article header .right-content h3{
 .overall-rating-block .obtained{
     color:#01b0f0;
 }  
+.overall-rating-block.v2{
+    color:#01b0f0;
+    background:none;
+    border:2px solid #00b0f0;
+    border-radius:5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    line-height: 50px;
+}
 .feedback-points{
-    border-top:1px solid #dddedf;
-    padding-top:15px;
     margin-bottom: 18px;
+    font-weight: 700;
 } 
 p,.feedback-points li{
     color:#848282;
 }
-p em{
+.feedback-points ul{
+    margin-bottom: 20px;
+}
+em{
     color:#3bc5f8;
     font-style: normal;
 }
@@ -552,7 +568,9 @@ p em{
     margin:30px 0;
     margin-left:12px;
 }
-
+.article-body > .row:first-child:after{
+    display: none;
+}
 .block-question{
     font-size: 18px;
     font-weight: 600;
