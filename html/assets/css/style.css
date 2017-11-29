@@ -57,6 +57,9 @@ ul{
     transition: width linear 0.4s;
     
 }
+.inner-block{
+    padding:0 30px;
+}
 .close-menu.content{
     width:-webkit-calc(100% - 70px);
     width:calc(100% - 70px);
@@ -560,7 +563,7 @@ em{
     vertical-align: top;
     margin:0 3px;
 }
-.article-body > .row:not(:last-child):after{
+.inner-block > .row:not(:last-child):after{
     content:"";
     width:calc(100% - 24px);
     width:-webkit-calc(100% - 24px);
@@ -568,9 +571,7 @@ em{
     margin:30px 0;
     margin-left:12px;
 }
-.article-body > .row:first-child:after{
-    display: none;
-}
+
 .block-question{
     font-size: 18px;
     font-weight: 600;
