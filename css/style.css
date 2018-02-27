@@ -1,0 +1,196 @@
+/*
+1.) Feedback
+2.) Feedback Step 2
+*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #4f4f4f;
+}
+
+/*================================
+1.) Feedback
+==================================*/
+.inner-content{
+    max-width: 840px;
+    margin:40px auto 0;
+}
+.inner-content h4{
+    font-size: 16px;
+    font-weight:600;
+}
+.form-field .title-bar{
+    height:40px;
+    background:#f7f6f6;
+    line-height: 40px;
+    color:#4f4f4f;
+    font-weight:600;
+    text-align: center;
+    margin-top:25px;
+}
+.form-field .title-bar .label-wrapper{
+    float:left;
+    padding-left:40px;
+    min-width:350px;
+    text-align: left;
+}
+.form-field{
+    margin-bottom: 50px;
+}     
+.form-field .title-bar .input-wrapper{
+    float:left;
+    
+}
+.form-field .title-bar .link-group{
+    float:right;
+    font-weight:400;
+    margin-right:25px;
+}
+.link-btn{
+    color:#00b0f0;
+    display: inline-block;
+}
+.link-btn:hover{
+    text-decoration: underline;
+    color: #00b0f0;
+}
+.form-body .input-row{
+    padding-top:30px;
+    overflow: hidden;
+}
+.form-body .input-row label{
+    padding-left:40px;
+    margin:0;
+    position: relative;
+    float: left;
+    line-height: 25px;
+    font-size: 14px;
+    min-width:350px;
+}
+.form-body .input-row label span{
+    max-width:243px;
+    display: block;
+}
+.form-body .input-row label:before{
+    content:"";
+    display:inline-block;
+    position: absolute;
+    top:2px;
+    left:11px;
+    width:25px;
+    height:25px;
+    background:url(../image/sprite.png) no-repeat;
+}
+.form-body .input-row .icon-file:before{
+    background-position: 0px 0px;
+    left:11px;
+    top:2px;
+}
+.form-body .input-row .icon-history:before{
+    background-position: -28px 0px;
+    left:11px;
+    top:4px;
+}
+.form-body .input-row .icon-vcard:before{
+    background-position: -61px 0px;
+    left:11px;
+    top:6px;
+}
+.form-body .input-row .icon-relationship:before{
+    background-position: -94px 0px;
+    width:28px;
+    left: 8px;
+    top: 5px;
+}
+.form-body .input-row .icon-role:before{
+    background-position: 0px -31px;
+    left:11px;
+    top:2px;
+}
+.form-body .input-row .icon-review:before{
+    background-position: -29px -31px;
+    left:11px;
+    top:2px;
+}
+.form-body .input-row input[type="text"]{
+    border:0;
+    display:inline-block;
+    width:100%;
+    border-bottom:1px solid #4f4f4f;
+    padding:0 15px 3px;
+}
+input:focus,input:hover,input:active{
+    outline:none;
+}
+.form-body .input-row .input-wrapper{
+    float:left;
+    width:-webkit-calc(100% - 350px);
+    width:calc(100% - 350px);
+}
+.form-body .input-row .input-wrapper input{
+    margin-bottom: 10px;
+}
+.form-body .input-row .input-wrapper.three-blocks input{
+    width:30%;
+    float: left;
+}
+.form-body .input-row .input-wrapper.three-blocks input:nth-child(2){
+    margin:0 5%;
+}
+.icon-calendar{
+    position: relative;
+}
+.icon-calendar:before{
+    content:"";
+    position: absolute;
+    height:15px;
+    width:15px;
+    background:url(../image/sprite.png) no-repeat;
+    right:5px;
+    top:2px;
+    background-position: -63px -39px;
+}
+.form-body{
+    margin-bottom: 50px;
+}
+.warning-block{
+    border:1px solid #00b0f0;
+    padding:25px 25px 25px 140px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.warning-block p{
+    margin-bottom: 0;
+}
+.warning-block p:not(:last-child){
+    margin-bottom: 20px;
+}
+.warning-block:before{
+    content: "important";
+    text-transform: uppercase;
+    color: #00b0f0;
+    position: absolute;
+    left: 26px;
+    top: 25px;
+    padding-top: 80px;
+    background: url(../image/sprite.png) no-repeat;
+    background-position: 0px -121px;
+    width: 82px;
+}
+
+.btn-block{
+    font-size:14px;
+    font-weight:400;
+    height:40px;
+    border-radius:2px;
+    max-width:400px;
+    margin:0 auto;
+    background:#00b0f0;
+    border-color:#00b0f0;
+}
+.btn-block:hover{
+    background: #058cbd;
+    border-color:#058cbd;
+}
+.note{
+    margin-bottom: 100px;
+}
