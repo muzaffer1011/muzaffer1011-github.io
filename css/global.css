@@ -13,6 +13,12 @@ p a:hover{
     color:#00b0f0;
     text-decoration: underline;
 }
+html,body{
+    min-height: 100%;
+    position: relative;
+    height:100%;
+}
+
 
 /*========Header========*/
 .header .navbar{
