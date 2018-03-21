@@ -1,0 +1,37 @@
+{
+  "profile": [
+    {
+      "id": 102,
+      "name": "Ashish Kumar",
+      "location": "New Delhi",
+      "jobProfile": "Accounts"
+    },
+    {
+      "id": 103,
+      "name": "Mohit Sharma",
+      "location": "New Delhi",
+      "jobProfile": "Admin"
+    },
+    {
+      "name": "dfgdfg",
+      "jobProfile": "dfgdfg",
+      "location": "dfgdfgdfg",
+      "redirect": false,
+      "id": 104
+    },
+    {
+      "name": "Add Profile",
+      "jobProfile": "ljlkj",
+      "location": "lkjlkjlk",
+      "redirect": false,
+      "id": 105
+    },
+    {
+      "name": "sdfsdfsdf",
+      "jobProfile": "sdfsdfs",
+      "location": "Delhi",
+      "redirect": false,
+      "id": 106
+    }
+  ]
+}
