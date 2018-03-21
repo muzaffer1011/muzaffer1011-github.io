@@ -1,0 +1,44 @@
+{
+  "profile": [
+    {
+      "name": "Mohd Muzaffer Hassan",
+      "jobProfile": "Frontend Developer",
+      "location": "Delhi",
+      "id": 7
+    },
+    {
+      "name": "Kamal",
+      "jobProfile": "Frontend Developer",
+      "location": "Delhi",
+      "id": 8
+    },
+    {
+      "name": "Satish G",
+      "jobProfile": "Frontend Developer",
+      "location": "Bangalore",
+      "redirect": false,
+      "id": 9
+    },
+    {
+      "name": "Sandeep Veerumalla",
+      "jobProfile": "Frontend Developer",
+      "location": "Hyderabad",
+      "redirect": false,
+      "id": 10
+    },
+    {
+      "name": "Ritu",
+      "jobProfile": "Frontend Developer",
+      "location": "Mumbai",
+      "redirect": false,
+      "id": 11
+    },
+    {
+      "name": "Sushant",
+      "jobProfile": "Frontend Developer",
+      "location": "Mumbai",
+      "redirect": false,
+      "id": 12
+    }
+  ]
+}
